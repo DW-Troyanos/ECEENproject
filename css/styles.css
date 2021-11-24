@@ -1,0 +1,244 @@
+body {
+    color: #2a3235;
+    font-family: 'Poppins' !important;
+}
+
+ul{
+  list-style: none !important;
+}
+
+ul li::before{
+  content: "\2022"; 
+  color: #ff8900;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em; 
+  margin-left: -1em;
+}
+
+.paginas{
+background-color: #ff8900;
+height: 9rem;
+}
+
+hr {
+    border: 2px solid #ff8900 !important;
+    opacity: 50% !important;
+  }
+
+.hr-2 {
+    border: 2px solid #6fafd2 !important;
+    opacity: 70% !important;
+  }
+
+.hr-footer {
+    border: 1px solid #6fafd2 !important;
+    width:auto;
+    opacity: 50%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2{
+    margin-top: 2.5rem !important;
+    margin-bottom: 2rem !important;
+    font-size: 3rem !important;
+    text-align: center;
+    font-weight: bold !important;
+}
+
+h3{
+  font-size: 3rem !important;
+  font-weight: bold !important;
+}
+
+/* ABOUT US */
+.aboutUs-video {
+    position: relative;
+    background-color: #39EAFF;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+  
+.aboutUs-video #aboutUs-videoResponsive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+  background-size:cover; 
+}
+  
+.aboutUs-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.aboutUs-video .container {
+  position: relative;
+  z-index: 2;
+}
+
+.aboutUs-Title{
+  text-shadow: 2px 2px 5px #000;
+}
+
+.aboutUs-Text{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* CULTURE */
+.culture-background {
+  position: relative;
+  background-color: #39EAFF;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.culture-background #culture-imageResponsive {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+transform: translateX(-50%) translateY(-50%);
+background-size:cover; 
+}
+
+.culture-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.culture-background .container {
+position: relative;
+z-index: 2;
+}
+
+.culture-Title{
+text-shadow: 2px 2px 5px #000;
+}
+
+.culture-Text{
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* CONTACT */
+.enfasis-columna {
+  margin-top: 45px;
+  text-align: left;
+  border-collapse: collapse;
+} 
+.enfasis-columna td {
+  padding: 10px 15px;
+  color: #2A3235;
+  border-top: 1px solid #e8edff;
+}
+.columna {
+  width: 11rem;
+  opacity: 80%;
+  background: #FF8900;
+  color: #f9f9f9 !important;
+}
+.columna2 {
+  width: 11rem;
+  background-color: rgba(42, 50, 53, 0.2);
+  color: #2a3235 !important;
+}
+
+/* FOOTER */
+footer{
+    background-color: #2a3235;
+    color: #f9f9f9 !important;
+    font-size: .7rem;
+}
+
+.footer-info{
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.footer-icons{
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.footer-copyright{
+    font-size: .6rem;
+}
+
+
+.verticarrusel1lLine {
+    border-left: 1px solid #6fafd2 !important;
+    opacity: 50%;
+}
+
+.verticalLine {
+    background-color: #39EAFF !important;
+}
+.hamburguesa{
+  width: 25px !important;
+  padding: auto;
+  margin:auto;
+}
+
+.navbar-icon{
+  width: 25px;
+  align-self: flex-end;
+}
+
+.nav-link{
+  align-content:center !important;
+}
+
+/* @media */
+@media (min-width:768px) { /* Display para dispositivos moviles */
+  .logo{
+    align-items: flex-start;
+  }
+  h5,h6{
+    size: 10% !important;
+  }
+  
+
+  @media (max-width:991px){
+    h5,h6{
+      size: 20% !important;
+    }
+    h2{
+      size: 50% !important;
+    }
+  }
+}
