@@ -39,21 +39,32 @@
 
   <!--HEADER-->
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand justify-content-start" href="index.html"><img src="img/logo.png"
-            class="logo img-fluid"></a>
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+          <img src="img/menu.png" style="width: 2rem !important;" class="hamburguesa">
+        </button>
+
+        <!-- Logo de Eceen -->
+        <a class="navbar-brand justify-content-start" href="index.html"><img src="img/logo.png" class="img-fluid"
+            style="width: 12rem;"></a>
+
+        <!-- Barra de Navegación y elementos -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav text-start">
             <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
             <a class="nav-link px-3" href="products01.html">Products</a>
             <a class="nav-link px-3" href="news.html">News</a>
-            <a class="nav-link px-3 active" href="aboutUs.html">About Us</a>
+            <a class="nav-link px-3 text-center active" href="aboutUs.html">About Us</a>
             <a class="nav-link px-3" href="contact.html">Contact</a>
           </div>
         </div>
-        <li class="nav-item dropdown list-unstyled">
-          <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+
+        <!-- Dropdown - Buscar -->
+        <li class="nav-item dropdown list-unstyled d-none d-sm-block">
+          <a class="nav-link dropdown text-end" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             <img src="img/search.png" width="25rem">
           </a>
@@ -65,13 +76,14 @@
             </form>
           </div>
         </li>
-        <ul class="dropdown-menu dropdown-menu-end mt-0" id="dropdownMenuClickableInside"
-          style="box-shadow: 2px 2px 5px #000;" aria-labelledby="navbarDropdown">
-        </ul>
-        <li class="nav-item list-unstyled">
+
+        <!-- Dropdown - Carrito -->
+        <li class="nav-item list-unstyled d-none d-sm-block">
           <a class="nav-link" href=""><img src="img/cart.png" width="25rem"></a>
         </li>
-        <li class="nav-item dropdown list-unstyled">
+
+        <!-- Dropdown - Usuario -->
+        <li class="nav-item dropdown list-unstyled d-sm-block">
           <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             <img src="img/user.png" width="25rem">
@@ -180,11 +192,11 @@
               <img src="img/promo3.jpg" width="450rem">
             </div>
             <div class="col-7 text-justify fs-4">
-              <p>ECEEN ELECTRONIC LIMITED established from 2007, at beginning, we develop and sales the portable solar
-                chargers, the solar panel are below 1watts, and built-in several mAh capacity battery inside, it’s
-                widely used for Nokia cell phones etc. at beginning, it have good sales and earn many bigger companies
-                orders during that time. The battery pack is enough for Nokia cell phones in that time, especial of the
-                solar concept, we have many customer for gifts market.
+              <p>ECEEN ELECTRONIC LIMITED was established since 2007, at the beginning, we develop and sales the
+                portable solar chargers, the solar panel is below 1watts, and built-in several mAh capacity battery
+                inside, it’s widely used for Nokia cell phones etc. at the beginning, it has good sales and earn many
+                bigger companies' orders during that time. The battery pack is enough for Nokia cell phones at that
+                time, especially of the solar concept, we have many customers in the gift market.
               </p>
             </div>
             <p class="text-justify fs-5 mt-4">Cause of the financial crisis during 2008, and the smart cell phones
@@ -225,11 +237,9 @@
               <img src="img/promo7.jpg" class="pt-1" width="450rem">
             </div>
             <p class="text-justify fs-5 mt-4">ECEEN® is a textile and electronic developing and manufacturing company.
-              ECEEN® designs, develops and produces the solar products are latest technology, qualified and at least
-              12months warranty.
+              ECEEN® designs, develops and produces the solar products are the latest technology, qualified and at least 12 months warranty.
             </p>
-            <p class="text-justify fs-5 mt-2">ECEEN® owns the design and the construction patents of all the product it
-              creates.
+            <p class="text-justify fs-5 mt-2">ECEEN® owns the design and the construction patents of all the products it creates.
             </p>
         </article>
       </section>
@@ -288,28 +298,29 @@
     </article>
 
     <!--FOOTER-->
-    <footer class="p-3 mt-3">
-      <article class="footer-info">
-          <div class="row">
-              <div class="col-auto me-4">
-                  <strong>General info</strong><br><a class="text-decoration-none link-light" href="aboutUs.html#aboutUs">About us</a><br><a class="text-decoration-none link-light" href="aboutUs.html#ourStory">Our story</a><br><a class="text-decoration-none link-light" href="aboutUs.html#ourBrand">ECEEN brand</a><br><a class="text-decoration-none link-light" href="contact.html">Contact us</a>
+    <footer class="py-2 mt-5">
+      <div class="container footer-info py-2 px-3">
+          <div class="row mx-4">
+              <div class="col-6 col-lg-2 mb-3">
+                  <strong>General info</strong><br><a class="text-decoration-none link-light"
+                      href="aboutUs.html#aboutUs">About us</a><br><a class="text-decoration-none link-light"
+                      href="aboutUs.html#ourStory">Our story</a><br><a class="text-decoration-none link-light"
+                      href="aboutUs.html#ourBrand">ECEEN brand</a><br><a class="text-decoration-none link-light"
+                      href="contact.html">Contact us</a>
               </div>
-              <div class="col-auto me-4">
-                  <strong>My Account</strong><br>Register/Login
+              <div class="col-6 col-lg-2 mb-3">
+                  <strong>Policy and Information</strong><br><a class="text-decoration-none link-light"
+                  href="privacyAndSecurity.html">Privacy & Security Policy</a><br><a class="text-decoration-none link-light"
+                  href="termsOfUse.html">Terms
+                  of Use Agreement</a><br>
               </div>
-              <div class="col-auto me-4">
-                  <strong>Policy and Information</strong><br>Privacy & Security Policy<br>Return and Refund<br>Terms
-                  of Use Agreement<br>Payment Method
+              <div class="col-6 col-lg-5 mb-3">
+                  <strong>Shipping</strong><br><a class="text-decoration-none link-light"
+                  href="shipping.html">Shipping</a>
               </div>
-              <div class="col-2">
-                  <strong>Shipping</strong><br>Shipping<br>Order tracking
-              </div>
-              <div class="col-5"><div class="row">
-                  <div class="col-12 col-md-6 text-end">
-                      <p class="my-2">Follow us:</p>
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <a class="footer-icons"
+              <div class="col-lg-3 mb-3 justify-content-end">
+                  <p class="my-2">Follow us:</p>
+                  <a class="footer-icons"
                       href="https://business.facebook.com/ECEEN-solar-Powered-Charger-and-Backpacks-369194183593195/?business_id=273283417371256&modal=admin_todo_tour"><img
                           src="img/facebook.png" width="30rem"></a><a class="footer-icons"
                       href="https://twitter.com/EceenGrid"><img src="img/twitter.png" width="30rem"></a><a
@@ -317,22 +328,19 @@
                           src="img/instagram.png" width="30rem"></a><a class="footer-icons"
                       href="https://www.youtube.com/channel/UCjUo8IN0Aa06skTCvTQxUVQ?view_as=subscriber"><img
                           src="img/youtube.png" width="30rem"></a>
-                  </div>
               </div>
           </div>
-      </article>
-      <hr class="hr-footer">
-      <article class="footer-copyright">
-          <div class="row">
-              <div class="col-3">
-                  <a href="index.html" class="ms-8"><img src="img/logo_footer.png" width="170rem" class="img-fluid"></a>
+          <hr class="hr-footer">
+          <div class="row mx-4">
+              <div class="col-lg-2 mb-2">
+                  <a href="index.html"><img src="img/logo_footer.png" width="170rem" class="img-fluid"></a>
               </div>
-              <div class="col-5">
-                  <p class="my-2">Copyright 2021 ECEEN. All rights reserved. <a class="link-light" href="#">Privacy Policy</a> <a class="link-light"
-                          href="#">Terms of Use.</a></p>
+              <div class="col-5 col-lg-5 align-middle">
+                  <p class="my-sm-2">Copyright 2021 ECEEN. All rights reserved. <a href="#" class="link-light">Privacy
+                          Policy</a> <a href="#" class="link-light">Terms of Use.</a></p>
               </div>
           </div>
-      </article>
+      </div>
   </footer>
 </body>
 
