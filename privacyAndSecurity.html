@@ -40,86 +40,87 @@
   <!--HEADER-->
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-          <img src="img/menu.png" style="width: 2rem !important;" class="hamburguesa">
-        </button>
+        <div class="container-fluid">
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler px-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <img src="img/menu.png" style="width: 2rem !important;" class="hamburguesa">
+            </button>
 
-        <!-- Logo de Eceen -->
-        <a class="navbar-brand justify-content-start" href="index.html"><img src="img/logo.png" class="img-fluid"
-            style="width: 12rem;"></a>
+            <!-- Logo de Eceen -->
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo ms-center"></a>
 
-        <!-- Barra de Navegación y elementos -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-start">
-            <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link px-3" href="products01.html">Products</a>
-            <a class="nav-link px-3" href="news.html">News</a>
-            <a class="nav-link px-3 text-center" href="aboutUs.html">About Us</a>
-            <a class="nav-link px-3" href="contact.html">Contact</a>
-          </div>
-        </div>
-
-        <!-- Dropdown - Buscar -->
-        <li class="nav-item dropdown list-unstyled d-none d-sm-block">
-          <a class="nav-link dropdown text-end" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img src="img/search.png" width="25rem">
-          </a>
-          <div class="dropdown-menu  dropdown-menu-end">
-            <form class="d-flex" style="width: 30rem;">
-              <input class="form-control me-2 ms-2" type="search" placeholder="What are you looking for?"
-                aria-label="Search">
-              <button class="btn btn-primary-sm me-2" type="submit">Search</button>
-            </form>
-          </div>
-        </li>
-
-        <!-- Dropdown - Carrito -->
-        <li class="nav-item list-unstyled d-none d-sm-block">
-          <a class="nav-link" href=""><img src="img/cart.png" width="25rem"></a>
-        </li>
-
-        <!-- Dropdown - Usuario -->
-        <li class="nav-item dropdown list-unstyled d-sm-block">
-          <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img src="img/user.png" width="25rem">
-          </a>
-          <div class="dropdown-menu px-4 py-3 dropdown-menu-end">
-            <form class="px-4 py-3" style="width: 16rem;">
-              <div class="mb-3">
-                <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-              </div>
-              <div class="mb-3">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                  <label class="form-check-label" for="dropdownCheck">
-                    Remember me
-                  </label>
+            <!-- Barra de Navegación y elementos -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-start">
+                    <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link px-3" href="products01.html">Products</a>
+                    <a class="nav-link px-3" href="news.html">News</a>
+                    <a class="nav-link px-3" href="aboutUs.html">About Us</a>
+                    <a class="nav-link px-3" href="contact.html">Contact</a>
                 </div>
-              </div>
-              <button type="submit" class="btn btn-primary-sm justify-content-center">Sign in</button>
-            </form>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item text-tertiary" href="#">New around here? Sign up</a>
-            <a class="dropdown-item text-tertiary" href="#">Forgot password?</a>
-          </div>
-        </li>
-      </div>
+            </div>
+
+            <!-- Dropdown - Buscar -->
+            <li class="nav-item dropdown list-unstyled d-none d-sm-block">
+                <a class="nav-link dropdown text-end" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="img/search.png" width="25rem">
+                </a>
+                <div class="dropdown-menu  dropdown-menu-end">
+                    <form class="d-flex" style="width: 30rem;">
+                        <input class="form-control me-2 ms-2" type="search" placeholder="What are you looking for?"
+                            aria-label="Search">
+                        <button class="btn btn-primary-sm me-2" type="submit">Search</button>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Dropdown - Carrito -->
+            <li class="nav-item list-unstyled d-none d-sm-block">
+                <a class="nav-link" href=""><img src="img/cart.png" width="25rem"></a>
+            </li>
+
+            <!-- Dropdown - Usuario -->
+            <li class="nav-item dropdown list-unstyled d-sm-block">
+                <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/user.png" width="25rem">
+                </a>
+                <div class="dropdown-menu px-4 py-3 dropdown-menu-end">
+                    <form class="px-4 py-3" style="width: 16rem;">
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                placeholder="email@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary-sm justify-content-center">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-tertiary" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item text-tertiary" href="#">Forgot password?</a>
+                </div>
+            </li>
+        </div>
     </nav>
-  </header>
+</header>
 
   <!--TTTLE-->
-  <div class="paginas text-white text-center">
-    <h3 class="pt-4_5">Privacy and Security Policy</h3>
+  <div class="mt-0 paginas text-white text-center align-middle">
+    <h2 class="titulo-largo my-0 pt-4_5 animate__animated animate__backInDown">Privacy and Security Policy</h2>
   </div>
 
   <main class="container-fluid">
@@ -194,49 +195,48 @@
     </div>
 
       <!--FOOTER-->
-      <footer class="py-2 mt-5">
-        <div class="container footer-info py-2 px-3">
-            <div class="row mx-4">
-                <div class="col-6 col-lg-2 mb-3">
-                    <strong>General info</strong><br><a class="text-decoration-none link-light"
-                        href="aboutUs.html#aboutUs">About us</a><br><a class="text-decoration-none link-light"
-                        href="aboutUs.html#ourStory">Our story</a><br><a class="text-decoration-none link-light"
-                        href="aboutUs.html#ourBrand">ECEEN brand</a><br><a class="text-decoration-none link-light"
-                        href="contact.html">Contact us</a>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <strong>Policy and Information</strong><br><a class="text-decoration-none link-light"
-                    href="privacyAndSecurity.html">Privacy & Security Policy</a><br><a class="text-decoration-none link-light"
-                    href="termsOfUse.html">Terms
-                    of Use Agreement</a><br>
-                </div>
-                <div class="col-6 col-lg-5 mb-3">
-                    <strong>Shipping</strong><br><a class="text-decoration-none link-light"
-                    href="shipping.html">Shipping</a>
-                </div>
-                <div class="col-lg-3 mb-3 justify-content-end">
-                    <p class="my-2">Follow us:</p>
-                    <a class="footer-icons"
-                        href="https://business.facebook.com/ECEEN-solar-Powered-Charger-and-Backpacks-369194183593195/?business_id=273283417371256&modal=admin_todo_tour"><img
-                            src="img/facebook.png" width="30rem"></a><a class="footer-icons"
-                        href="https://twitter.com/EceenGrid"><img src="img/twitter.png" width="30rem"></a><a
-                        class="footer-icons" href="https://www.instagram.com/eceen_solar_backpack_charger/"><img
-                            src="img/instagram.png" width="30rem"></a><a class="footer-icons"
-                        href="https://www.youtube.com/channel/UCjUo8IN0Aa06skTCvTQxUVQ?view_as=subscriber"><img
-                            src="img/youtube.png" width="30rem"></a>
-                </div>
-            </div>
-            <hr class="hr-footer">
-            <div class="row mx-4">
-                <div class="col-lg-2 mb-2">
-                    <a href="index.html"><img src="img/logo_footer.png" width="170rem" class="img-fluid"></a>
-                </div>
-                <div class="col-5 col-lg-5 align-middle">
-                    <p class="my-sm-2">Copyright 2021 ECEEN. All rights reserved. <a href="#" class="link-light">Privacy
-                            Policy</a> <a href="#" class="link-light">Terms of Use.</a></p>
-                </div>
-            </div>
+    <footer class="py-2 mt-5">
+      <div class="container footer-info py-2 px-3">
+        <div class="row mx-4">
+          <div class="col-6 col-lg-2 mb-3">
+            <strong>General info</strong><br><a class="text-decoration-none link-light"
+              href="aboutUs.html#aboutUs">About us</a><br><a class="text-decoration-none link-light"
+              href="aboutUs.html#ourStory">Our story</a><br><a class="text-decoration-none link-light"
+              href="aboutUs.html#ourBrand">ECEEN brand</a><br><a class="text-decoration-none link-light"
+              href="contact.html">Contact us</a>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <strong>Policy and Information</strong><br><a class="text-decoration-none link-light"
+              href="privacyAndSecurity.html">Privacy & Security Policy</a><br><a class="text-decoration-none link-light"
+              href="termsOfUse.html">Terms
+              of Use Agreement</a><br>
+          </div>
+          <div class="col-6 col-lg-5 mb-3">
+            <strong>Shipping</strong><br><a class="text-decoration-none link-light" href="shipping.html">Shipping</a>
+          </div>
+          <div class="col-lg-3 mb-3 justify-content-end">
+            <p class="my-2">Follow us:</p>
+            <a class="footer-icons"
+              href="https://business.facebook.com/ECEEN-solar-Powered-Charger-and-Backpacks-369194183593195/?business_id=273283417371256&modal=admin_todo_tour"><img
+                src="img/facebook.png" width="30rem"></a><a class="footer-icons"
+              href="https://twitter.com/EceenGrid"><img src="img/twitter.png" width="30rem"></a><a class="footer-icons"
+              href="https://www.instagram.com/eceen_solar_backpack_charger/"><img src="img/instagram.png"
+                width="30rem"></a><a class="footer-icons"
+              href="https://www.youtube.com/channel/UCjUo8IN0Aa06skTCvTQxUVQ?view_as=subscriber"><img
+                src="img/youtube.png" width="30rem"></a>
+          </div>
         </div>
+        <hr class="hr-footer">
+        <div class="row mx-4">
+          <div class="col-lg-2 mb-2">
+            <a href="index.html"><img src="img/logo_footer.png" width="170rem" class="img-fluid"></a>
+          </div>
+          <div class="col-5 col-lg-5 align-middle">
+            <p class="footer-copyright my-sm-2">Copyright 2021 ECEEN. All rights reserved. <a href="#" class="link-light">Privacy
+                Policy</a> <a href="#" class="link-light">Terms of Use.</a></p>
+          </div>
+        </div>
+      </div>
     </footer>
 </body>
 

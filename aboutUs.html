@@ -48,8 +48,7 @@
         </button>
 
         <!-- Logo de Eceen -->
-        <a class="navbar-brand justify-content-start" href="index.html"><img src="img/logo.png" class="img-fluid"
-            style="width: 12rem;"></a>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo ms-center"></a>
 
         <!-- Barra de Navegación y elementos -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
@@ -57,15 +56,14 @@
             <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
             <a class="nav-link px-3" href="products01.html">Products</a>
             <a class="nav-link px-3" href="news.html">News</a>
-            <a class="nav-link px-3 text-center active" href="aboutUs.html">About Us</a>
+            <a class="nav-link px-3 active" href="aboutUs.html">About Us</a>
             <a class="nav-link px-3" href="contact.html">Contact</a>
           </div>
         </div>
 
         <!-- Dropdown - Buscar -->
         <li class="nav-item dropdown list-unstyled d-none d-sm-block">
-          <a class="nav-link dropdown text-end" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a class="nav-link dropdown text-end" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="img/search.png" width="25rem">
           </a>
           <div class="dropdown-menu  dropdown-menu-end">
@@ -84,8 +82,7 @@
 
         <!-- Dropdown - Usuario -->
         <li class="nav-item dropdown list-unstyled d-sm-block">
-          <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="img/user.png" width="25rem">
           </a>
           <div class="dropdown-menu px-4 py-3 dropdown-menu-end">
@@ -110,7 +107,7 @@
             </form>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item text-tertiary" href="#">New around here? Sign up</a>
-            <a class="dropdown-item text-tertiary" href="#">Forgot password?</a>
+            <a id="aboutUs" class="dropdown-item text-tertiary" href="#">Forgot password?</a>
           </div>
         </li>
       </div>
@@ -118,8 +115,8 @@
   </header>
 
   <!--TTTLE-->
-  <div class="paginas text-white text-center">
-    <h3 class="pt-4_5" id="aboutUs">About Us</h3>
+  <div class="mt-0 paginas text-white text-center align-middle">
+    <h2 class="my-0 pt-4_5 animate__animated animate__backInDown">About Us</h2>
   </div>
 
   <main class="container-fluid">
@@ -127,8 +124,8 @@
     <!-- ABOUT US -->
     <div class="container">
       <section>
-        <article class="container">
-          <p class="text-justify fs-4 pt-5">ECEEN ELECTRONIC LIMITED Established in 2007, ECEEN is our brand, It is a
+        <article class="container fs-4">
+          <p class="text-justify pt-5 ">ECEEN ELECTRONIC LIMITED Established in 2007, ECEEN is our brand, It is a
             high-new technology factory
             of specialty producing about Solar backpack, Solar charger, Power supplies etc solar series products. We
             take OEM, ODM and SKD orders from renowned companies at home and abroad. With a factory space of 1,000
@@ -146,11 +143,11 @@
         </article>
       </section>
       <section>
-        <article class="container">
-          <p class="text-justify fs-4">To facilitate your sourcing need, All of our products are RoHS-, CE- and
+        <article class="container fs-4">
+          <p class="text-justify">To facilitate your sourcing need, All of our products are RoHS-, CE- and
             FCC-certified, and eighty percent clients place repeat orders from us. Learn more about the services we
             offer, contact us today.</p>
-          <ul class="fs-5 mb-5">
+          <ul class="fs-5 mb-5 mx-3">
             <li>Easy online ordering.</li>
             <li>Wholesale discounts: excellent margins for you.</li>
             <li>Shipping direct to your warehouse. (Door-to-Door)</li>
@@ -172,7 +169,7 @@
               ECEEN offers you competitive wholesale prices on all the products you find in our Online Wholesale Shop.
               The
               prices you see here are sample single-unit prices only.</li>
-            <li><b>Drop Shipping:</b> <br>
+            <li><b>Drop Shipping:</b> <br id="ourStory">
               What if you don't want to deal with the headaches of handling goods, warehouse space, shipping and product
               returns? Then drop shipping is the answer. ECEEN allows drop-ship orders for all registered customers with
               no extra charges.</li>
@@ -185,13 +182,13 @@
       </div>
 
       <section>
-        <h2 id="ourStory">Our story</h2>
+        <h2 class="animate__animated animate__fadeInDown">Our story</h2>
         <article class="container">
           <div class="row">
-            <div class="col-5">
-              <img src="img/promo3.jpg" width="450rem">
+            <div class="col-lg-5 col-sm-12">
+              <img src="img/promo3.jpg" class="aboutUs-img" width="450rem">
             </div>
-            <div class="col-7 text-justify fs-4">
+            <div class="col-lg-7 col-sm-12 text-justify fs-4">
               <p>ECEEN ELECTRONIC LIMITED was established since 2007, at the beginning, we develop and sales the
                 portable solar chargers, the solar panel is below 1watts, and built-in several mAh capacity battery
                 inside, it’s widely used for Nokia cell phones etc. at the beginning, it has good sales and earn many
@@ -199,33 +196,37 @@
                 time, especially of the solar concept, we have many customers in the gift market.
               </p>
             </div>
-            <p class="text-justify fs-5 mt-4">Cause of the financial crisis during 2008, and the smart cell phones
-              beginning… More and more people are realized that the solar technology characteristics, so the small solar
-              chargers orders cut down year by year.
-            </p>
-            <p class="text-justify fs-5 mt-2">When we build a product it must be beautiful, modern and useful. So after
-              years of studies and tests we engineered a new way to construct bags. Then we patented it and at the
-              beginning of 2010, ECEEN designs and develop bigger solar panel products on backpacks, it’s have enough
-              space to attached solar panel and generate enough power to charger any kits outside, that’s way is
-              successes.
-            </p>
-            <div class="container">
-              <hr>
-            </div>
-            <p class="text-center fs-2 mt-2">
-              <b>ECEEN is now a trademark distributed worldwide with its own products or in a co-branded form.</b>
-            </p>
-            <div class="container">
-              <hr>
+            <div class="fs-5">
+              <p class="text-justify mt-2">Cause of the financial crisis during 2008, and the smart cell phones
+                beginning… More and more people are realized that the solar technology characteristics, so the small solar
+                chargers orders cut down year by year.
+              </p>
+              <p class="text-justify mt-2">When we build a product it must be beautiful, modern and useful. So after
+                years of studies and tests we engineered a new way to construct bags. Then we patented it and at the
+                beginning of 2010, ECEEN designs and develop bigger solar panel products on backpacks, it’s have enough
+                space to attached solar panel and generate enough power to charger any kits outside, that’s way is
+                successes.
+              </p>
+              <div class="container">
+                <hr>
+              </div>
+              <div class="fs-2">
+                <p class="text-center mt-2">
+                  <b>ECEEN is now a trademark distributed worldwide with its own products or in a co-branded form.</b>
+                </p>
+              </div>
+              <div class="container">
+                <hr>
+              </div>
             </div>
         </article>
       </section>
 
       <section>
-        <h2 id="ourBrand">Our brand</h2>
+        <h2 class="animate__animated animate__fadeInDown">Our brand</h2>
         <article class="container">
           <div class="row">
-            <div class="col-7 text-justify fs-4">
+            <div class="col-lg-7 col-sm-12 text-justify fs-4">
               <p>ECEEN® brand is focus on Solar Backpack, Solar Charger and Power Supplies etc. products, Our passion is
                 Share the Sun! Everywhere, anyway, whenever!
               </p>
@@ -233,14 +234,19 @@
                 camping, hiking, climbing, biking, all kinds of travel as well as many other lifestyle activities.
               </p>
             </div>
-            <div class="col-5">
-              <img src="img/promo7.jpg" class="pt-1" width="450rem">
+            <div class="col-lg-5 col-sm-12">
+              <img src="img/promo7.jpg" class="aboutUs-img" width="450rem">
             </div>
-            <p class="text-justify fs-5 mt-4">ECEEN® is a textile and electronic developing and manufacturing company.
-              ECEEN® designs, develops and produces the solar products are the latest technology, qualified and at least 12 months warranty.
-            </p>
-            <p class="text-justify fs-5 mt-2">ECEEN® owns the design and the construction patents of all the products it creates.
-            </p>
+            <div class="fs-5">
+              <p class="text-justify mt-4">ECEEN® is a textile and electronic developing and manufacturing company.
+                ECEEN® designs, develops and produces the solar products are the latest technology, qualified and at
+                least
+                12 months warranty.
+              </p>
+              <p class="text-justify mt-2">ECEEN® owns the design and the construction patents of all the products it
+                creates.
+              </p>
+            </div>
         </article>
       </section>
 
@@ -249,12 +255,12 @@
       </div>
     </div>
 
-    <h2 id="ourCulture">Our culture</h2>
+    <h2 id="ourCulture" class="animate__animated animate__fadeInDown">Our culture</h2>
     <article class="culture-background mt-5">
       <div class="overlay"></div>
       <img id="culture-imageResponsive" src="img/culture1.jpg">
       <div class="container my-9">
-        <div class="mx-12 text-justify text-white">
+        <div class="mx-auto text-justify text-white">
           <p class="culture-Text text-center mb-0 fs-1"><b>Creation:</b></p>
           <p class="culture-Text text-center fs-2">Never churning out, never cozying up, never losing yourself; I am who
             I am.</a>
@@ -266,7 +272,7 @@
       <div class="overlay"></div>
       <img id="culture-imageResponsive" src="img/culture2.jpg">
       <div class="container my-9">
-        <div class="mx-12 text-justify text-white">
+        <div class="mx-auto text-justify text-white">
           <p class="culture-Text text-center mb-0 fs-1"><b>Happiness:</b></p>
           <p class="culture-Text text-center fs-2">Touch the user by design, win the happiness by user’s praise and
             recognition.</a>
@@ -278,7 +284,7 @@
       <div class="overlay"></div>
       <img id="culture-imageResponsive" src="img/culture3.jpg">
       <div class="container my-9">
-        <div class="mx-12 text-justify text-white">
+        <div class="mx-auto text-justify text-white">
           <p class="culture-Text text-center mb-0 fs-1"><b>Value:</b></p>
           <p class="culture-Text text-center fs-2">Believe our philosophy, pursue excellent quality, and create value
             for customers and partners.</a>
@@ -290,7 +296,7 @@
       <div class="overlay"></div>
       <img id="culture-imageResponsive" src="img/culture4.jpg">
       <div class="container my-9">
-        <div class="mx-12 text-justify text-white">
+        <div class="mx-auto text-justify text-white">
           <p class="culture-Text text-center mb-0 fs-1"><b>Ideal:</b></p>
           <p class="culture-Text text-center fs-2">ECEEN will always beside you and serve you.</a>
         </div>
@@ -300,48 +306,47 @@
     <!--FOOTER-->
     <footer class="py-2 mt-5">
       <div class="container footer-info py-2 px-3">
-          <div class="row mx-4">
-              <div class="col-6 col-lg-2 mb-3">
-                  <strong>General info</strong><br><a class="text-decoration-none link-light"
-                      href="aboutUs.html#aboutUs">About us</a><br><a class="text-decoration-none link-light"
-                      href="aboutUs.html#ourStory">Our story</a><br><a class="text-decoration-none link-light"
-                      href="aboutUs.html#ourBrand">ECEEN brand</a><br><a class="text-decoration-none link-light"
-                      href="contact.html">Contact us</a>
-              </div>
-              <div class="col-6 col-lg-2 mb-3">
-                  <strong>Policy and Information</strong><br><a class="text-decoration-none link-light"
-                  href="privacyAndSecurity.html">Privacy & Security Policy</a><br><a class="text-decoration-none link-light"
-                  href="termsOfUse.html">Terms
-                  of Use Agreement</a><br>
-              </div>
-              <div class="col-6 col-lg-5 mb-3">
-                  <strong>Shipping</strong><br><a class="text-decoration-none link-light"
-                  href="shipping.html">Shipping</a>
-              </div>
-              <div class="col-lg-3 mb-3 justify-content-end">
-                  <p class="my-2">Follow us:</p>
-                  <a class="footer-icons"
-                      href="https://business.facebook.com/ECEEN-solar-Powered-Charger-and-Backpacks-369194183593195/?business_id=273283417371256&modal=admin_todo_tour"><img
-                          src="img/facebook.png" width="30rem"></a><a class="footer-icons"
-                      href="https://twitter.com/EceenGrid"><img src="img/twitter.png" width="30rem"></a><a
-                      class="footer-icons" href="https://www.instagram.com/eceen_solar_backpack_charger/"><img
-                          src="img/instagram.png" width="30rem"></a><a class="footer-icons"
-                      href="https://www.youtube.com/channel/UCjUo8IN0Aa06skTCvTQxUVQ?view_as=subscriber"><img
-                          src="img/youtube.png" width="30rem"></a>
-              </div>
+        <div class="row mx-4">
+          <div class="col-6 col-lg-2 mb-3">
+            <strong>General info</strong><br><a class="text-decoration-none link-light"
+              href="aboutUs.html#aboutUs">About us</a><br><a class="text-decoration-none link-light"
+              href="aboutUs.html#ourStory">Our story</a><br><a class="text-decoration-none link-light"
+              href="aboutUs.html#ourBrand">ECEEN brand</a><br><a class="text-decoration-none link-light"
+              href="contact.html">Contact us</a>
           </div>
-          <hr class="hr-footer">
-          <div class="row mx-4">
-              <div class="col-lg-2 mb-2">
-                  <a href="index.html"><img src="img/logo_footer.png" width="170rem" class="img-fluid"></a>
-              </div>
-              <div class="col-5 col-lg-5 align-middle">
-                  <p class="my-sm-2">Copyright 2021 ECEEN. All rights reserved. <a href="#" class="link-light">Privacy
-                          Policy</a> <a href="#" class="link-light">Terms of Use.</a></p>
-              </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <strong>Policy and Information</strong><br><a class="text-decoration-none link-light"
+              href="privacyAndSecurity.html">Privacy & Security Policy</a><br><a class="text-decoration-none link-light"
+              href="termsOfUse.html">Terms
+              of Use Agreement</a><br>
           </div>
+          <div class="col-6 col-lg-5 mb-3">
+            <strong>Shipping</strong><br><a class="text-decoration-none link-light" href="shipping.html">Shipping</a>
+          </div>
+          <div class="col-lg-3 mb-3 justify-content-end">
+            <p class="my-2">Follow us:</p>
+            <a class="footer-icons"
+              href="https://business.facebook.com/ECEEN-solar-Powered-Charger-and-Backpacks-369194183593195/?business_id=273283417371256&modal=admin_todo_tour"><img
+                src="img/facebook.png" width="30rem"></a><a class="footer-icons"
+              href="https://twitter.com/EceenGrid"><img src="img/twitter.png" width="30rem"></a><a class="footer-icons"
+              href="https://www.instagram.com/eceen_solar_backpack_charger/"><img src="img/instagram.png"
+                width="30rem"></a><a class="footer-icons"
+              href="https://www.youtube.com/channel/UCjUo8IN0Aa06skTCvTQxUVQ?view_as=subscriber"><img
+                src="img/youtube.png" width="30rem"></a>
+          </div>
+        </div>
+        <hr class="hr-footer">
+        <div class="row mx-4">
+          <div class="col-lg-2 mb-2">
+            <a href="index.html"><img src="img/logo_footer.png" width="170rem" class="img-fluid"></a>
+          </div>
+          <div class="col-5 col-lg-5 align-middle">
+            <p class="footer-copyright my-sm-2">Copyright 2021 ECEEN. All rights reserved. <a href="#" class="link-light">Privacy
+                Policy</a> <a href="#" class="link-light">Terms of Use.</a></p>
+          </div>
+        </div>
       </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

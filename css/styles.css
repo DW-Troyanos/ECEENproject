@@ -3,6 +3,12 @@ body {
     font-family: 'Poppins' !important;
 }
 
+.logo {
+	max-height: 40px !important;
+	width: auto;
+  float: left !important;
+}
+
 ul{
   list-style: none !important;
 }
@@ -107,6 +113,13 @@ h3{
     text-shadow: 2px 2px 5px #000;
 }
 
+.aboutUs-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
 /* CULTURE */
 .culture-background {
   position: relative;
@@ -117,6 +130,10 @@ h3{
   overflow: hidden;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  transition: .5s;
+}
+.culture-background:hover {
+  transform: scale(1.05);
 }
 
 .culture-background #culture-imageResponsive {
@@ -168,14 +185,13 @@ text-shadow: 2px 2px 5px #000;
 }
 .columna {
   width: 11rem;
+  font-size: 1.5rem !important;
   opacity: 80%;
   background: #FF8900;
   color: #f9f9f9 !important;
 }
 .columna2 {
-  width: 11rem;
-  background-color: rgba(42, 50, 53, 0.2);
-  color: #2a3235 !important;
+  font-size: 1rem !important;
 }
 
 /* FOOTER */
@@ -193,12 +209,7 @@ footer{
 .footer-icons{
     margin-left: .5rem;
     margin-right: .5rem;
-}
-
-.footer-copyright{
-    font-size: .6rem;
-}
-
+} 
 
 .verticarrusel1lLine {
     border-left: 1px solid #6fafd2 !important;
@@ -224,21 +235,54 @@ footer{
 }
 
 /* @media */
-@media (min-width:768px) { /* Display para dispositivos moviles */
-  .logo{
-    align-items: flex-start;
+@media (max-width:780px) { /* Display para dispositivos moviles */
+  p{
+    font-size: 1rem !important;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
-  h5,h6{
-    size: 10% !important;
+  h5{
+    font-size: 1rem !important;
   }
-  
 
-  @media (max-width:991px){
-    h5,h6{
-      size: 20% !important;
-    }
-    h2{
-      size: 50% !important;
-    }
+  h3{
+    font-size: 1rem !important;
+  }
+  h1{
+    font-size: 10rem;
+    color:#39EAFF;
+  }
+  h2{
+    font-size: 2rem !important;
+  }
+  .btn{
+    border-radius: 1rem !important;
+    font-size: 1.5rem !important;
+    width: 10rem !important;
+  }
+  ul,li{
+    font-size: 1rem !important;
+  }
+  .paginas {
+    height: 7.8rem;
+  }
+  .footer-copyright{
+    font-size: .5rem !important;
+  }
+  .aboutUs-video{
+    height: 10rem !important; 
+  }
+  .columna1{
+    font-size: 1rem !important;
+  }
+  .columna2{
+    font-size: .7rem !important;
+  }
+  form{
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+  .titulo-largo{
+    font-size: 1.8rem !important;
   }
 }
