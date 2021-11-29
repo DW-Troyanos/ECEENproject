@@ -1,4 +1,3 @@
-// ARTICLES
 $(document).ready(function () {
   if(window.location.href.indexOf("news") > -1){
       var posts = [
@@ -29,7 +28,7 @@ $(document).ready(function () {
                     <article class="container animate__animated animate__fadeInLeft">
                       <div class="row mt-5">
                         <div class="col-lg-5 col-sm-12 mb-4">
-                          <a href="${item.link}"><img src="${item.img}" class="aboutUs-img"></a>
+                          <a href="${item.link}"><img src="${item.img}" width="450rem"></a>
                         </div>
                         <div class="col-lg-7 col-sm-12 text-justify my-10px">
                           <p class="articuloPre-titulo link-primary">
@@ -48,5 +47,24 @@ $(document).ready(function () {
   $("#posts").append(post);
   });
 }
+
+$("#login form").submit(function () {
+  let form_name = $("#form_name").val();
+  localStorage.setItem("form_name", form_name);
 });
 
+var form_name = localStorage.getItem("form_name");
+
+if (form_name != null && form_name != "unfined") {
+  let about_parrafo = $("#login");
+  $("#login").html("<b><h3>Bienvenido </h3><p>" + form_name + "</p></b>");
+  about_parrafo.append("<br><img src='img/user.png' class='mx-auto mb-4 w-25'>");
+  about_parrafo.append("<br><a class='text-tertiary text-decoration-none' href = 'cart.html'>Ir al carrito</a>");
+  about_parrafo.append("<br><a class='text-tertiary text-decoration-none' href = '#' id = 'logout'>Cerrar Sesión</a>");
+
+  $("#logout").click(function () {
+    localStorage.clear();
+    location.reload();
+  });
+}
+});

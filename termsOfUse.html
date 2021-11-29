@@ -54,7 +54,7 @@
             <!-- Barra de Navegación y elementos -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav text-start">
-                    <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link px-3 active" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link px-3" href="products01.html">Products</a>
                     <a class="nav-link px-3" href="news.html">News</a>
                     <a class="nav-link px-3" href="aboutUs.html">About Us</a>
@@ -79,7 +79,7 @@
 
             <!-- Dropdown - Carrito -->
             <li class="nav-item list-unstyled d-none d-sm-block">
-                <a class="nav-link" href=""><img src="img/cart.png" width="25rem"></a>
+                <a class="nav-link" href="cart.html"><img src="img/cart.png" width="25rem"></a>
             </li>
 
             <!-- Dropdown - Usuario -->
@@ -88,33 +88,34 @@
                     <img src="img/user.png" width="25rem">
                 </a>
                 <div class="dropdown-menu px-4 py-3 dropdown-menu-end">
-                    <form class="px-4 py-3" style="width: 16rem;">
-                        <div class="mb-3">
-                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                                placeholder="email@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                <label class="form-check-label" for="dropdownCheck">
-                                    Remember me
-                                </label>
+                    <div id="login">
+                        <form class="px-4 py-3" style="width: 16rem;">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Email address</label>
+                                <input type="email" class="form-control" name="name" id="form_name"
+                                     placeholder="email@example.com"/>
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary-sm justify-content-center">Sign in</button>
-                    </form>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-tertiary" href="#">New around here? Sign up</a>
-                    <a class="dropdown-item text-tertiary" href="#">Forgot password?</a>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id=""
+                                    placeholder="Password"/>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck"/>
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Send" class="btn btn-primary-sm justify-content-center">
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-tertiary" href="#">New around here? Sign up</a>
+                            <a class="dropdown-item text-tertiary" href="#">Forgot password?</a>
+                        </form>
+                    </div>
                 </div>
             </li>
-        </div>
     </nav>
 </header>
 
