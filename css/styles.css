@@ -172,6 +172,14 @@ text-shadow: 2px 2px 5px #000;
   text-shadow: 2px 2px 5px #000;
 }
 
+/* ARTICULOS */
+.articuloPre-titulo{
+  font-size: 2rem !important;
+}
+.articuloPre-pre{
+  font-size: 1.2rem !important;
+}
+
 /* CONTACT */
 .enfasis-columna {
   margin-top: 45px;
@@ -284,5 +292,11 @@ footer{
   }
   .titulo-largo{
     font-size: 1.8rem !important;
+  }
+  .articuloPre-titulo{
+    font-size: 1.2rem !important;
+  }
+  .articuloPre-pre{
+    font-size: 1rem !important;
   }
 }
